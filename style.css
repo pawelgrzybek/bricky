@@ -1,0 +1,50 @@
+@keyframes show {
+  0% {
+    transform: scale(.9);
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 12px;
+  background: hsla(0, 0%, 95%, 1);
+  color: #555;
+  font-family: sans-serif;
+  font-size: 80%;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}
+
+article {
+  margin-bottom: 12px;
+  background: #fff;
+  animation-name: show;
+  animation-duration: 250ms;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(.17, .67, .52, 1.25);
+  box-shadow: inset 0 0 0 1px hsla(0, 0%, 93%, 1);
+}
+
+h2 {
+  padding: 1.5rem 1.5rem 0;
+  color: #000;
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 1.1rem;
+}
+
+p {
+  padding: 1.5rem;
+}

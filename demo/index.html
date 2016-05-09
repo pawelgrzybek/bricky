@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="style.css" />
-  <title>Masonry</title>
+  <title>Bricky</title>
 </head>
 <body>
   <div class="masonry">
@@ -68,6 +68,21 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, praesentium! Aut mollitia qui error ducimus impedit, odit laborum veniam necessitatibus! Dolorem, nihil, ut rem, consectetur ex dicta a nisi autem voluptatem, temporibus eius. Nemo sequi minus accusamus adipisci animi similique!</p>
     </article>
   </div>
-  <script src="dist/bundle.js"></script>
+  <script src="../js/bricky.min.js"></script>
+  <script>
+    var pref = {
+      parent: '.masonry',
+      elements: 'article',
+      gutter: '12px',
+      breakpoints: [
+        [600, 2],
+        [900, 3],
+        [1200, 4]
+      ]
+    };
+
+    var test = new Bricky(pref);
+    test.start();
+  </script>
 </body>
 </html>

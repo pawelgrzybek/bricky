@@ -18,7 +18,7 @@
 
       [].forEach.call(elements, function(item) {
         divs.push(item);
-        item.remove();
+        item.parentNode.removeChild(item);
       });
 
       return divs;

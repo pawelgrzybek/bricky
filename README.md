@@ -1,16 +1,16 @@
 # Bricky
 
-A simple plugin to create Masonry / Pinterest style layout. A small demo is included inside the repository inside the 'demo' directory, or you can check it [here on CodePen](http://codepen.io/pawelgrzybek/pen/vGbzpW).
+A simple plugin to create Masonry / Pinterest style layout. A demo is inside 'demo' directory, or you can check it [here on CodePen](http://codepen.io/pawelgrzybek/pen/vGbzpW).
 
 ## How to use
 
-You can use Bricky by directly injecting script into your document or via npm if you use any module bundlers like the popular [Browserify](http://browserify.org/) or powerful [Webpack](https://webpack.github.io/) bundler. It takes an object with some settings as the only parameter. Take a look at the example provided below.
+You can use Bricky by directly injecting script into your document markup or via npm if you use any module bundler like the popular [Browserify](http://browserify.org/) or powerful [Webpack](https://webpack.github.io/). It takes an object with some settings as the only parameter. Take a look at the example provided below.
 
 ### Options
 
 ```js
 {
-  parent: '.masonry',
+  parent: '.bricky',
   elements: 'article',
   gutter: '12px',
   breakpoints: [
@@ -21,10 +21,10 @@ You can use Bricky by directly injecting script into your document or via npm if
 }
 ```
 
-- parent (required / string) - string with jQuery style query where grid should be placed
-- elements (required / string) - query with elements that should be added to Bricky layout
-- gutter (optional / string) - gutter width in relative or absolute units
-- breakpoints (optional / array) - this array is a collection of nested arrays. Each of them is constructed as `[breakpoint, columns]`. You can pass as many breakpoints as you want.
+- `parent` (required) - string, jQuery style query where grid should be placed
+- `elements` (required) - string, query with elements that should be added to Bricky layout
+- `gutter` (optional) - string, gutter width in relative or absolute units
+- `breakpoints` (optional) - array, this array is a collection of nested arrays. Each of them is constructed as `[breakpoint, columns]`. You can pass as many breakpoints as you want.
 
 ### Node style
 
@@ -40,7 +40,7 @@ In script file...
 var Bricky = require('bricky');
 
 var pref = {
-  parent: '.masonry',
+  parent: '.bricky',
   elements: 'article',
   gutter: '12px',
   breakpoints: [
@@ -62,7 +62,7 @@ In document markup...
 <script src="../js/bricky.min.js"></script>
 <script>
   var pref = {
-    parent: '.masonry',
+    parent: '.bricky',
     elements: 'article',
     gutter: '12px',
     breakpoints: [

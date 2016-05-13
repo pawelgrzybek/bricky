@@ -1,6 +1,6 @@
 {
   "name": "bricky",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "It's a simple plugin to create Masonry / Pinterest style layout.",
   "main": "js/bricky.js",
   "scripts": {

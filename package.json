@@ -4,7 +4,7 @@
   "description": "It's a simple plugin to create Masonry / Pinterest style layout.",
   "main": "js/bricky.js",
   "scripts": {
-    "uglify": "./node_modules/.bin/uglifyjs ./js/bricky.js -o ./js/bricky.min.js -m -c"
+    "uglify": "./node_modules/.bin/uglifyjs ./js/bricky.js -o ./js/bricky.min.js -m -c && ./node_modules/.bin/uglifyjs ./js/bricky.js -o ./demo/bricky.min.js -m -c"
   },
   "repository": {
     "type": "git",

@@ -38,9 +38,6 @@
 
       // create a flex wrapper & append to parent div
       var container = document.createElement('div');
-      container.style.display = '-webkit-box';
-      container.style.display = '-webkit-flex';
-      container.style.display = '-ms-flexbox';
       container.style.display = 'flex';
       this.parent.appendChild(container);
 
